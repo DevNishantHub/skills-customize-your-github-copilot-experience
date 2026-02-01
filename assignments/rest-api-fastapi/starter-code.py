@@ -8,6 +8,11 @@ from pydantic import BaseModel
 
 # TODO: Define Task model using Pydantic
 # Fields: id (int), title (str), description (str), completed (bool)
+class Task(BaseModel):
+    id: int
+    title: str
+    description: str
+    completed: bool
 
 
 # TODO: Create in-memory storage for tasks
